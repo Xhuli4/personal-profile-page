@@ -1,0 +1,208 @@
+:root {
+    --primary-color: #2d3845;
+    --secondary-color: #a6a278;
+    --accent-color: #8c6436;
+    --light-color: #f2e6ac;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1);
+  }
+  
+  header {
+    text-align: center;
+    padding: 30px;
+    background: var(--primary-color);
+    color: var(--light-color);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .profile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid var(--light-color);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile img:hover {
+    transform: rotate(10deg) scale(1.1);
+  }
+  
+  .profile h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .profile p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+  }
+  
+  .hobbies {
+    background: var(--primary-color);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .hobbies h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .hobbies ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .hobbies li {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hobbies li:hover {
+    background: var(--light-color);
+    color: var(--accent-color);
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 50px 30px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3));
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+  }
+  
+  .contact h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--light-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  
+  .social-icons a {
+    color: var(--light-color);
+    font-size: 2.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: inline-block;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .social-icons a:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+    background: var(--accent-color);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact a {
+    text-decoration: none;
+    color: var(--primary-color);
+    background: var(--light-color);
+    padding: 18px 45px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+  }
+  
+  .contact a:hover {
+    background: var(--accent-color);
+    color: var(--light-color);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact a:active {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .contact h3 {
+      font-size: 2rem;
+    }
+  
+    .social-icons a {
+      font-size: 2rem;
+      padding: 12px;
+    }
+  
+    .contact a {
+      font-size: 1rem;
+      padding: 12px 35px;
+    }
+  }
+  
