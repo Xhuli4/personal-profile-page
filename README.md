@@ -17,6 +17,4 @@ This is a sample personal profile page built as part of the **100 Days of Code**
 1. Clone this repository to your local machine.
 2. Open `index.html` in your browser to view the profile page.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
